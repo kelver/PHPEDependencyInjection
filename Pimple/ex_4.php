@@ -5,7 +5,7 @@
  * Date: 11/03/17
  * Time: 03:13
  */
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Pimple\Container;
 
@@ -38,8 +38,11 @@ $ioc['ta'] = function($c){
 };
 
 //Tester
-$ioc['tester'] = function($c){
+$ioc['tester'] = $ioc->factory(function($c){
     return new Tester($c['ta']);
-};
+});
 
 $tester = $ioc['tester'];
+$tester2 = $ioc['tester'];
+
+var_dump($tester, $tester2);

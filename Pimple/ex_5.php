@@ -5,7 +5,7 @@
  * Date: 11/03/17
  * Time: 03:13
  */
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use Pimple\Container;
 
