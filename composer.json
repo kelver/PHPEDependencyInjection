@@ -5,7 +5,7 @@
     },
     "autoload": {
         "psr-4": {
-            "KMV\\DI\\" : "5_ReflectionClass/src"
+            "KMV\\DI\\" : "6_ReflectionClass_Resolver/src"
         }
     }
 }
